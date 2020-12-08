@@ -2,7 +2,7 @@ package com.martyx.Exceptions;
 
 import com.martyx.Utils.Osoba;
 
-public class Exception {
+public class Exceptionsss {
     public static void main(String[] args) {
         Osoba osoba = new Osoba("Martin", "Bugar", 26);
         osoba.setMeno(null);
