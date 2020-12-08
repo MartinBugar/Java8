@@ -54,4 +54,8 @@ public class Numbers {
         System.out.println(number);
     }
 
+    public static void vypis () {
+        System.out.println("ahoj som staticka");
+    }
+
 }
