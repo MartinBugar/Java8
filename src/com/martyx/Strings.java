@@ -1,0 +1,23 @@
+package com.martyx;
+
+public class Strings {
+    public static void main(String[] args) {
+
+        int i = 2018;
+        String meno = "martin";
+        System.out.println("V roku " + i  + " " + meno + " robil kurz java ");
+
+        System.out.printf("%b %n", true);
+        System.out.printf("%b %n",  meno);
+        System.out.printf("%c %n", 'j');
+        System.out.printf("%d %n", 10);
+        System.out.printf("%f %n", 10.55);
+        System.out.printf("a%nb %n ");
+
+        System.out.println("-------------------------");
+        String string1 = String.format("%d", 15555);
+        System.out.println(string1);
+
+
+    }
+}
