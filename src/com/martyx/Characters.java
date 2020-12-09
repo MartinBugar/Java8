@@ -4,6 +4,36 @@ import org.w3c.dom.ls.LSOutput;
 
 public class Characters {
     public static void main(String[] args) {
+          //  specialCharackters();
+        workWithStrings();
+    }
+
+    private static void workWithStrings() {
+        int i = 25;
+        String s1 = " sss " + i; //i je prevedene na string cez  metodu Integer.toString
+        System.out.println(s1);
+
+        System.out.println("-------------------------------------------------------");
+        String martin = "martin bugar 99999";
+        System.out.println(martin.length());
+        System.out.println(martin.charAt(10));
+        System.out.println(martin.substring(1,3));
+        System.out.println(martin.indexOf("a")); //vrati index prveho vyskytu daneho znaku
+        System.out.println(martin.lastIndexOf("a")); // vrati index posledneho vyskytu znaku
+        System.out.println(martin.equals("martin bugar "));
+        System.out.println(martin.indexOf("bugar"));
+        System.out.println(martin.contains("martin"));
+        System.out.println(martin.equalsIgnoreCase("MARTIN Bugar"));
+
+        System.out.println("------------------------------------------------------------");
+        System.out.println(martin.replace("m","M"));
+
+        System.out.println(martin.replaceAll("a","A"));
+        System.out.println(martin.replaceAll("[0-9]", "?")); //vsetky cisla mi nahradi otaznikom
+
+    }
+
+    private static void specialCharackters() {
         char ch = 'a';
 
         //Unicode for uppercase Greek  omega character
