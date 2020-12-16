@@ -8,7 +8,10 @@ public class RegularExpresions {
     public static void main(String[] args) {
        // uvod();
         prehladavanie();
-
+        // * 0-n krat
+        // + 1-n krat
+        // {} kolko krat ma bzt hladana vec vyskytovana sa
+        // [] chceme hladat znaky
     }
 
     private static void prehladavanie() {
