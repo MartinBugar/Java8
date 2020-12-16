@@ -8,7 +8,8 @@ public class RegularExpresions {
     public static void main(String[] args) {
        // uvod();
        // prehladavanie();
-        greedyReluctantPossesiveQuantifier();
+       // greedyReluctantPossesiveQuantifier();
+        boundaryMathers();
 
 
 
@@ -24,6 +25,25 @@ public class RegularExpresions {
         // X{n} hladame X n krat
         // X{n,} hladame X najmenej n krat
         // X{n,m} hladame X najmenej n krat ale nie viac ako m krat
+
+        //BOUNDARY MATHERS
+        // ^ zaciatok riadku
+        // $ koniec riadku
+        // \b slovna hranica
+        // \B neslovna hranica
+    }
+
+    private static void boundaryMathers() {
+       // displayResult("^hus", "Hus sa hra na pozemku"); // na zaciatku vety musi byt hus
+      //  displayResult("^hus", "hus sa hra na pozemku"); // na zaciatku vety musi byt hus
+       // displayResult("^[hH]us","Hus sa hra na pozemku"); // na zaciatku vety musi byt hus s velkym alebo malym Hh
+
+        displayResult("\\bhus\\b", "Moja hus sa hra na pozemku"); //   \b prve znamena ze to musi byt samostatne slovo, druhe znamena koniec toho slova
+        displayResult("\\bhus\\b", "Moja huska sa hra na pozemku");
+        displayResult("\\bhus\\B", "Moja hus sa hra na pozemku");
+        displayResult("\\bhus\\B", "Moja huska sa hra na pozemku"); //   \ velke B znamena ze to neni samostatne slovo
+
+
     }
 
     private static void greedyReluctantPossesiveQuantifier() {
