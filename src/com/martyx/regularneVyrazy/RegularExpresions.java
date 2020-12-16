@@ -9,7 +9,8 @@ public class RegularExpresions {
        // uvod();
        // prehladavanie();
        // greedyReluctantPossesiveQuantifier();
-        boundaryMathers();
+       // boundaryMathers();
+        splitRegex();
 
 
 
@@ -31,6 +32,47 @@ public class RegularExpresions {
         // $ koniec riadku
         // \b slovna hranica
         // \B neslovna hranica
+
+
+        //LOGICKE OPERACIE
+        // XY X a za nim Y
+        // X|Y X alebo Y
+        //  \p{Lower} matchuje to male pismenka
+        // \p{Upper} matchuje to velke pismenka
+
+
+        // CHYBA je PatternSyntaxException
+    }
+
+    private static void splitRegex() {
+        String regex = ":";
+        String text = "jeden:dva:tri:styri:pat";
+        Pattern pattern = Pattern.compile(regex);
+        String [] items = pattern.split(text);
+        for (String s : items){
+            System.out.println(s);
+        }
+
+//        regex = "\\d";
+//        text = "jeden4dva7tri9styri1pat";
+//        pattern = Pattern.compile(regex);
+//        items = pattern.split(text);
+//        for (String s : items){
+//            System.out.println(s);
+//        }
+
+        String[] s = text.split(regex); // vracia mi pole stringov
+        System.out.println(s.length);
+
+
+        System.out.println("martin".matches("martin"));
+
+
+        //martin@martin.sk
+        //  \w+@\w+\.sk
+        regex = "\\w+@\\w+\\.sk";
+        System.out.println("martin@martin.sk".matches(regex));
+
     }
 
     private static void boundaryMathers() {
