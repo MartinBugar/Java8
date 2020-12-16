@@ -6,7 +6,8 @@ import java.util.Locale;
 public class Strings {
     public static void main(String[] args) {
        // formatovanie();
-        advancedFormatovanie();
+       // advancedFormatovanie();
+
     }
 
     private static void advancedFormatovanie() {
