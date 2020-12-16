@@ -7,11 +7,38 @@ import java.util.regex.Pattern;
 public class RegularExpresions {
     public static void main(String[] args) {
        // uvod();
-        prehladavanie();
+       // prehladavanie();
+        greedyReluctantPossesiveQuantifier();
+
+
+
+
+
         // * 0-n krat
         // + 1-n krat
         // {} kolko krat ma bzt hladana vec vyskytovana sa
         // [] chceme hladat znaky
+        // X? hladame x jeden krat alebo vobec
+        // X* hladame x nula alebo viac krat
+        // X+ hladame X raz alebo viac krat
+        // X{n} hladame X n krat
+        // X{n,} hladame X najmenej n krat
+        // X{n,m} hladame X najmenej n krat ale nie viac ako m krat
+    }
+
+    private static void greedyReluctantPossesiveQuantifier() {
+        System.out.println("greedy");
+        displayResult("foo.*bar","xfooxxbarxxxxfooxbarxxxx"); //hladam foo hociaky znak a bar - greedz berie co najvecsi retazec
+
+        System.out.println("reluctant");
+        displayResult("foo.*?bar", "xfooxxbarxxxxfooxbarxxxx");//hladam foo hociaky znak a bar - reluctant berie co najkratsi retazec
+
+        System.out.println("possesive");
+        displayResult("foo.*+bar","xfooxxbarxxxxfooxbarxxxx"); //  to iste co greedy ale pri vyhladavani sa nevracia naspet
+
+        System.out.println("possesive2");
+        displayResult("foo.*+bar","" +
+                "fooxbar"); //  to iste co greedy ale pri vyhladavani sa nevracia naspet
     }
 
     private static void prehladavanie() {
