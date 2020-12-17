@@ -1,6 +1,9 @@
 package com.martyx.Utils;
 
-public class Osoba {
+import java.io.Serializable;
+import java.lang.invoke.SerializedLambda;
+
+public class Osoba implements Serializable {
 
     private String meno;
     private String priezvisko;
