@@ -1,2 +1,2 @@
-Toto je text10, ktory 150je super
+Toto je text 10, ktory 150 je super
 Toto je druhy, riadok textu
