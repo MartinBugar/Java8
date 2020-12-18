@@ -2,8 +2,12 @@ package com.martyx.inputOutput;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class FileWork {
     public static void main(String[] args) {
@@ -21,6 +25,20 @@ public class FileWork {
         System.out.println();
 
         System.out.println("toString : " + path.toString());
+
+
+        //try with resources - pri takomto pouziti nemusim zatvarat subor - spravi sa to automaticky
+        try (BufferedReader bufferedReader = Files.newBufferedReader(path)){
+            bufferedReader.readLine();
+        } catch (IOException ioException){
+            ioException.printStackTrace();
+        }
+
+        try(Scanner scanner = new Scanner(Files.newBufferedReader(path))){
+            scanner.nextLine();
+        } catch (IOException ioException){
+            ioException.printStackTrace();
+        }
     }
 
 
