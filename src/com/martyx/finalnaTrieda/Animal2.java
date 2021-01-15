@@ -7,4 +7,6 @@ public class Animal2 extends Animal {
         super(name, color, age);
     }
 
+    public Animal2(){}
+
 }

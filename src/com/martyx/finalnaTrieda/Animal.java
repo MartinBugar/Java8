@@ -13,6 +13,8 @@ public class Animal {
         this.age = age;
     }
 
+    public Animal(){}
+
     public String getName (){
         return name;
     }
