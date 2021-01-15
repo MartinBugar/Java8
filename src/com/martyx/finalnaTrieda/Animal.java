@@ -3,7 +3,7 @@ package com.martyx.finalnaTrieda;
 import java.util.Objects;
 
 public class Animal {
-    private static String name;
+    public String name;
     private String color;
     private int age;
 
@@ -23,6 +23,18 @@ public class Animal {
 
     public int getAge(){
         return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
