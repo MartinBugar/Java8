@@ -11,7 +11,7 @@ public class AnimalMain {
 
 
         Animal2 animal2 = new Animal2("slon25555","gggg",222);
-
+        animal2.animalEating();
 
 
 

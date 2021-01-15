@@ -37,6 +37,10 @@ public class Animal {
         this.age = age;
     }
 
+    public  void animalEating (){
+        System.out.println("zvieratko papa");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
