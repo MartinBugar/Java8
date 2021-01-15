@@ -13,5 +13,8 @@ public class Maps {
         map.put(1, "duro"); // prepise predchadyajuci element
 
         System.out.println(map.get(1));
+        System.out.println(map.values());
+        System.out.println(map.containsKey(1));
+        System.out.println(map.containsValue("martin"));
     }
 }
