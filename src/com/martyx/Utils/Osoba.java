@@ -3,7 +3,7 @@ package com.martyx.Utils;
 import java.io.Serializable;
 import java.lang.invoke.SerializedLambda;
 
-public class Osoba implements Serializable {
+public class Osoba implements Serializable, Comparable<Osoba> {
 
     private String meno;
     private String priezvisko;
@@ -37,5 +37,20 @@ public class Osoba implements Serializable {
 
     public void setVek(int vek){
         this.vek = vek;
+    }
+
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "meno='" + meno + '\'' +
+                ", priezvisko='" + priezvisko + '\'' +
+                ", vek=" + vek +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Osoba o) {
+        int porovnaniePriezviska = o.getPriezvisko().compareTo(this.getPriezvisko());
+        return porovnaniePriezviska != 0 ? porovnaniePriezviska : o.getMeno().compareTo(this.getMeno()) ;
     }
 }
