@@ -6,9 +6,9 @@ import java.util.List;
 public class RawType {
     public static void main(String[] args) {
         GenericBox <String> stringBox;
-        GenericBox rawBox; //
+        GenericBox rawBox; // nie je zadefinovany typ generika, doplni sa podla vlozenych parametrov
 
-        List names = new ArrayList();
+        List names = new ArrayList(); // takisto nieje vlozeny typ generika
         names.add("marcelinoooo");
         names.add("the vampireee");
 
@@ -16,5 +16,6 @@ public class RawType {
         for (Object s : names){
             System.out.println(s);
         }
+
     }
 }
