@@ -3,7 +3,7 @@ package com.martyx.generika;
 public class GenericBox <P> {
     private P object;
 
-    public void addObject ( P object){
+    public void setObject ( P object){
         this.object = object;
     }
 
@@ -14,11 +14,11 @@ public class GenericBox <P> {
     public static void main(String[] args) {
 
         GenericBox<String> stringGenericBox = new GenericBox<>();
-        stringGenericBox.addObject("ahoj");
+        stringGenericBox.setObject("ahoj");
         System.out.println(stringGenericBox.getObject());
 
         GenericBox<Integer> integerGenericBox = new GenericBox<>();
-        integerGenericBox.addObject(25);
+        integerGenericBox.setObject(25);
         System.out.println(integerGenericBox.getObject());
     }
 }
