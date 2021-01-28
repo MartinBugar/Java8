@@ -14,6 +14,10 @@ public class Pes {
         this.meno = meno;
     }
 
+    public void stekaj (){
+        System.out.println("haf");
+    }
+
 
 
     @Override

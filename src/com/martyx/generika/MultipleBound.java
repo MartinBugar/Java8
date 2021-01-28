@@ -7,7 +7,7 @@ import com.martyx.Utils.Pes;
 import java.io.Serializable;
 
 //genericky objekt musi splnit obi dve podmienky a to dedid od psa aj od interface serialized
-public class MultipleBound <P extends Pes & Serializable> { // musi byt ledna jedna trieda a ostatne interfacy
+public class MultipleBound  <P extends Pes & Serializable> extends NejakyPes { // musi byt ledna jedna trieda a ostatne interfacy
     private P object;
 
     public P getObject(){
@@ -18,9 +18,14 @@ public class MultipleBound <P extends Pes & Serializable> { // musi byt ledna je
         this.object = object;
     }
 
+
     public static void main(String[] args) {
         MultipleBound <NejakyPesSerialized> nejakyPesSerialized = new MultipleBound<>();
+
         nejakyPesSerialized.setObject(new NejakyPesSerialized("boby"));
+
+        MultipleBound multipleBoundPes = new MultipleBound();
+        multipleBoundPes.stekaj();
 
         //MultipleBound <NejakyPes> nejakyPesMultipleBound = new MultipleBound<NejakyPes>(); // chyba - neimplemwntuje interface serialized
     }
