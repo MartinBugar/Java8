@@ -26,7 +26,6 @@ public class MultipleGenericBox <P, T> {
         MultipleGenericBox <Osoba, Integer> multipleGenericBox2 = new MultipleGenericBox<>();
         multipleGenericBox2.add(new Osoba("martinus","neviem",25), 25);
 
-
         System.out.println(multipleGenericBox);
         System.out.println(multipleGenericBox2);
     }

@@ -1,6 +1,7 @@
 package com.martyx.generika;
 
 import com.martyx.Utils.NejakyPes;
+import com.martyx.Utils.Osoba;
 import com.martyx.Utils.Pes;
 
 public class BoundedType <P extends Pes> { //Generikum moze byt potom len Pes a nejaky pes
@@ -9,11 +10,11 @@ public class BoundedType <P extends Pes> { //Generikum moze byt potom len Pes a 
      */
     private P object; //instancia patri pod triedu BoundedType
 
-    public P getObjectPsa() {
+    public P getObject() {
         return object;
     }
 
-    public void setObjectPsa(P object) {
+    public void setObject(P object) {
         this.object = object;
     }
 
@@ -24,15 +25,15 @@ public class BoundedType <P extends Pes> { //Generikum moze byt potom len Pes a 
     public static void main(String[] args) {
 
         //Moze tam byt len objekt triedy PES
-        BoundedType <Pes> pesBoundedType = new BoundedType<>(); // <Pes> mi urcuje aky Typ je predstavovany pismenom P pri volani metod s P
-        Pes pess = new Pes();
-        pesBoundedType.setObjectPsa(pess);
+        BoundedType pesBoundedType = new BoundedType<>(); // <Pes> mi urcuje aky Typ je predstavovany pismenom P pri volani metod s P
+        Pes pes = new Pes();
+        pesBoundedType.setObject(pes);
         pesBoundedType.stekaj();
 
         //Moze tam byt len objekt triedy NejakyPes
         BoundedType <NejakyPes> nejakyPesBoundedType = new BoundedType<>();// <Pes> mi urcuje aky Typ je predstavovany pismenom P
         NejakyPes nejakyPesNew = new NejakyPes();
-        nejakyPesBoundedType.setObjectPsa(nejakyPesNew);
+        nejakyPesBoundedType.setObject(nejakyPesNew);
         nejakyPesBoundedType.stekaj();
     }
 }

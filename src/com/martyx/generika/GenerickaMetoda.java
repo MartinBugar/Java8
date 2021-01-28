@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 
 public class GenerickaMetoda {
 
-    private static <T> ArrayList<T> preklopMaNaList (HashMap <Long, T> collection){ // na zaciatku musim introducnut typ generika
+    private static <T> ArrayList <T> preklopMaNaList (HashMap <Long, T> collection){ // na zaciatku musim introducnut typ generika
         ArrayList <T> list = new ArrayList<>();
 
         for (Long key : collection.keySet()){

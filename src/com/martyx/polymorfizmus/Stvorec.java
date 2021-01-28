@@ -12,8 +12,9 @@ public class Stvorec extends GrafickyObjekt {
         return dlzkaStrany;
     }
 
+
     @Override
     void vykresli() {
-        System.out.println("stvorec sa  kresli");
+        System.out.println("aAAAAA");
     }
 }

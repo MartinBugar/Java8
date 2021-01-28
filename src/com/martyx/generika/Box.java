@@ -19,7 +19,7 @@ public class Box {
         Box integerBox = new Box();
         integerBox.addObject("2");
 
-        Integer integer = Integer.parseInt(String.valueOf(integerBox));
+        Integer integer = Integer.valueOf(String.valueOf(integerBox));
         System.out.println(integer);
     }
 }

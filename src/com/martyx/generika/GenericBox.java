@@ -13,11 +13,11 @@ public class GenericBox <P> {
 
     public static void main(String[] args) {
 
-        GenericBox<String> stringGenericBox = new GenericBox<>();
-        stringGenericBox.setObject("ahoj");
+        GenericBox <String> stringGenericBox = new GenericBox<>();
+        stringGenericBox.setObject("aaaa");
         System.out.println(stringGenericBox.getObject());
 
-        GenericBox<Integer> integerGenericBox = new GenericBox<>();
+        GenericBox <Integer> integerGenericBox = new GenericBox<>();
         integerGenericBox.setObject(25);
         System.out.println(integerGenericBox.getObject());
     }
