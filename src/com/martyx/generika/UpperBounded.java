@@ -16,11 +16,10 @@ public class UpperBounded {
         P i = list.get(1); // vytahujem element s indexom 1
         list.add(i); // vkladam element i typu P - pri wildcard to nejde
 
-
         return s;
     }
 
-    //Upperbounded wild card
+    //Upperbounded wild card - obmedzenie zhora - mozem pouzit vstko pod Number v tomto pripade
     // pri taktomto type metody nemozem do kolecie list vkladat nic- takze sa pouziva len pri vytahovani
     public static double sumOfList2(List <? extends Number> list){ // nemusim uvadzat generiku pred navratovy typ
         double s = 0.0;
