@@ -3,9 +3,10 @@ package com.martyx.generika;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Inference  {
+public class Inference  { // inferencia je sposob ako si java zisti aky typ premmennej ma deklarovat podla vlozenia
 
-    public static <T> T pick (T a1, T a2){
+    //klasicka genericka metoda
+    public static <T> T pick (T a1, T a2){// v tomto pripade T nemusi predstavovat rovnaky typ premennej - musia mat ale spolocneho predka
         return a1;
     }
 
