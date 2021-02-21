@@ -1,4 +1,4 @@
-package com.martyx.Utils;
+package com.martyx.utils;
 
 public class Pes {
 

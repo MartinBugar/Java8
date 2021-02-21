@@ -1,8 +1,8 @@
 package com.martyx.generika;
 
-import com.martyx.Utils.NejakyPes;
-import com.martyx.Utils.NejakyPesSerialized;
-import com.martyx.Utils.Pes;
+import com.martyx.utils.NejakyPes;
+import com.martyx.utils.NejakyPesSerialized;
+import com.martyx.utils.Pes;
 
 import java.io.Serializable;
 

@@ -20,5 +20,4 @@ public class LowerBounded {
         //list.get(i); - toto sa neda - neda sa vyberat
     }
 
-
 }

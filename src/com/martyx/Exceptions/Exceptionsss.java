@@ -1,6 +1,6 @@
 package com.martyx.Exceptions;
 
-import com.martyx.Utils.Osoba;
+import com.martyx.utils.Osoba;
 
 public class Exceptionsss {
     public static void main(String[] args) {

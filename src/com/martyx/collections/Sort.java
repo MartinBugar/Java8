@@ -1,6 +1,6 @@
 package com.martyx.collections;
 
-import com.martyx.Utils.Osoba;
+import com.martyx.utils.Osoba;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,7 +1,6 @@
-package com.martyx.Utils;
+package com.martyx.utils;
 
 import java.io.Serializable;
-import java.lang.invoke.SerializedLambda;
 
 public class Osoba implements Serializable, Comparable<Osoba> {
 

@@ -1,4 +1,4 @@
-package com.martyx.Utils;
+package com.martyx.utils;
 
 import java.io.Serializable;
 

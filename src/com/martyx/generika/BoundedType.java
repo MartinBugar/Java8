@@ -1,8 +1,7 @@
 package com.martyx.generika;
 
-import com.martyx.Utils.NejakyPes;
-import com.martyx.Utils.Osoba;
-import com.martyx.Utils.Pes;
+import com.martyx.utils.NejakyPes;
+import com.martyx.utils.Pes;
 
 public class BoundedType <P extends Pes> { //Generikum moze byt potom len Pes a nejaky pes
     /*

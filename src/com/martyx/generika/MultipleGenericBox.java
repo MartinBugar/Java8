@@ -1,6 +1,6 @@
 package com.martyx.generika;
 
-import com.martyx.Utils.Osoba;
+import com.martyx.utils.Osoba;
 
 public class MultipleGenericBox <P, T> {
     private P object1;

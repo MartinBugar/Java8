@@ -1,6 +1,6 @@
 package com.martyx.inputOutput;
 
-import com.martyx.Utils.Osoba;
+import com.martyx.utils.Osoba;
 
 import java.io.*;
 
