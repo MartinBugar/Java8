@@ -8,6 +8,18 @@ public class Main {
     public static void main(String[] args) {
         singletonMetoda();
         factoryMetoda();
+        builderMetoda();
+    }
+
+    private static void builderMetoda() {
+        Kladivo kladivo = Kladivo.kladivoBuilder()
+                .farba("zelena")
+                .vyrobca("hornbach")
+                .dlzka(100)
+                .build();
+
+
+        System.out.println(kladivo);
     }
 
     private static void factoryMetoda() {
@@ -24,6 +36,8 @@ public class Main {
         } else {
             System.out.println("nerovnaju sa");
         }
+
+
 
 
     }
