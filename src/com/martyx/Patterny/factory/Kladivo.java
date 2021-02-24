@@ -51,6 +51,8 @@ public class Kladivo {
                 '}';
     }
 
+
+
     public static class Builder {
         private String farba;
         private String vyrobca;
@@ -76,7 +78,7 @@ public class Kladivo {
 
 
         public Kladivo build() { // metoda mi vrati kladivo , to zavola konstruktor kde sa nasetuju parametre buildera do parametrov kladiva
-            return new Kladivo(this); // this sa odkayuje na tento builder
+            return new Kladivo(this); // this sa odkazuje na tento builder - kedze do parameter konstruktora kladivo je Builder builder
         }
     }
 }
